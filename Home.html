@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apni Paathshala | Home</title>
+    <style>
+       *{
+    box-sizing: border-box;
+}
+header h1 {
+    text-decoration: wavy;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+  }
+
+header {
+    padding: 40px;
+    background-color: rgba(29, 149, 170, 0.911);
+  }
+
+nav {
+  display: inline-block;
+    background-color: #333;
+    overflow: hidden;
+    position: relative;
+    width: 94.5vw;
+  }
+
+nav a {
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+    float: left;
+    color: white;
+  }
+nav a:hover{
+    color: rgb(67, 172, 199);
+    text-decoration: dotted;
+  }
+nav a:visited{
+    color: rgb(89, 233, 226);
+  }
+main {
+    background-color: white;
+    text-align: center;
+  }
+hr{
+    color: rgb(17, 124, 143); 
+  }
+h1 {
+    text-transform: uppercase;
+    text-decoration: wavy;
+    text-shadow:3px 3px 2px black ;
+  }
+body h2{
+    text-transform: uppercase;
+    text-decoration:dashed;
+    text-shadow: 1.5px 1.5px 1.5px rgb(77, 74, 74);
+  }
+p{
+    padding: 1.5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size:medium;
+    line-height: 2;
+    text-align: center;
+    text-indent: 50 px;
+    word-spacing: 3;
+  }
+
+body {
+  margin: 15px 30px;
+  font-size: 15px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+.container,
+.course{
+  display: flex;
+  flex-direction: row;
+  flex-wrap:nowrap;
+}
+
+.course img{
+  width: 210px;
+  height: 210px;
+}
+.course1,.course2, .course3, .course4{
+  position:relative;
+  width: 60%;
+    margin: 10px;
+    padding: 40px;
+    background-color: rgba(67, 190, 212, 0.863);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.course h2{
+    margin-bottom: 40px;
+  }
+
+.course1 a, .course2 a , .course3 a, .course4 a{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+}
+
+
+  .images,
+  .container1{
+   position: relative;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    font-family:'Times New Roman', Times, serif;
+    color: aliceblue;
+    
+  }
+
+  .image1 , .image2 , .image3{
+    width: 60%;
+    margin: 15px;
+    background-color: rgb(17, 124, 143);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: relative;
+  }
+  .image1 a, .image2 a, .image3 a{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+  }
+  .images p{
+    margin-bottom: 40px;
+  }
+  
+
+  #submit{
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    background-color: gray;
+    border-radius: 5px;
+    color: white;
+    border: black;
+    float: bottom;
+  }
+  #submit :hover{
+    background-color: rgb(183, 183, 248);
+    cursor:pointer;
+  }
+.courses{
+  text-align: left;
+  clear: left;
+}
+
+#profile{
+  float: right;
+}
+
+h2 {
+    font-size: large;
+    padding: 20px;
+  }
+
+section:nth-child(odd) {
+    background-color: rgb(241, 241, 241);
+  }
+
+section {
+    min-height: 100vh;
+    padding: 20px;
+    }
+     
+    #box{
+      float: left;
+    }
+
+    .cleared{
+      clear: left;
+    }
+
+video {
+    padding: 10px;
+  }
+iframe {
+    height: 75vh;
+  }
+
+img {
+    padding: 20px;
+}
+
+section h5 {
+    margin: 20px;
+}
+input[type="text"]{
+  
+  width: 40%;
+    padding: 12px;
+    border: 1px solid lightgrey;
+   border-radius: 3px;
+   margin: 10px;
+}
+
+.box-set1,.box-set2,.box-set3,.box-set4,.box{
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 20px 0;
+}
+  .box-set1,.box-set2,.box-set3,.box-set4{
+    background-color: lightgray;
+  }
+
+    .box{
+      display: inline-block;
+      background: rgb(175, 240, 233);
+      position:sticky;
+      height: 90px;
+      width: 10%;
+      text-align: center;
+      margin: 10px;
+    }
+    .t1{
+      float: right;
+      border-radius: 5px;
+   margin: 10px;
+    }
+    .t2{
+      float: left;
+      border-radius: 5px;
+   margin: 10px;
+    }
+    .box-2{
+      float: right;
+    }
+    .t3{
+      float: right;
+      border-radius: 5px;
+   margin: 10px;
+    }
+    .t4{
+      float: left;
+      border-radius: 5px;
+   margin: 10px;
+    }
+    .box-4{
+      float: right;
+    }
+   textarea{
+    color: #333;
+    width: 85%;
+    padding: 12px;
+    border: 1px solid lightgrey;
+   border-radius: 5px;
+   margin: 10px;
+   }
+footer {
+    background-color: #333;
+    overflow: hidden;
+}
+
+footer a {
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+    float: left;
+    color: white;
+}
+
+    </style>
+       
+</head>
+<body>
+  
+    <hr>
+    <header>
+   <h1><center> WELCOME TO APNI PAATHSHALA</center> </h1> 
+    </header>
+    <hr>
+    <div>
+      <nav>
+      <a href="Home.html">Home</a>
+      <a href="Studymaterial.html">Courses </a>
+      <a href="StudentsReport.html">Student Report</a> 
+      <a href="Login.html">Login/Sign up</a>
+      </nav></div>
+   <hr>
+   
+    <section>
+   <h2><center> <u> About Us </u> </center></h2>
+   <p><center>
+       <h4> ॐ भूर् भुवः स्वः। <br>
+    तत् सवितुर्वरेण्यं। <br>
+    भर्गो देवस्य धीमहि। <br>
+    धियो यो नः प्रचोदयात् ॥ </h4><br>
+    
+      <p><em> We are here to Create an environment for effective teaching-learning by encouraging the students and faculty to nurture their intellectual curiosity and and providing the Resources to Build up their skills, a step towards their better selves!</em> </p>
+    </center></p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut tempore quod doloremque temporibus quia possimus dolores animi, facilis voluptas corrupti modi obcaecati deleniti vel iusto minus quae ducimus. Non, numquam?</p>
+   <br>
+   <br>
+  <center> <iframe width="700" height="200" src="https://www.youtube.com/embed/5vgwex8qKts" title="YouTube video player" frameborder="1" allow="accelerometer; fullscreen; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+  </section>
+
+  <hr>
+  <hr>
+  <section>
+      <h2><center>Courses</center></h2>
+      <div class="container">
+        <div class="course">
+          <div class="course1">
+            <center><img id="sarvanam" src="images/beginers.jpg" width="70%"  alt=""></center>
+            <hr>
+            <center><b><h2>Beginners</h2></b></center>
+            <hr>
+            <a href="Login.html"><button id="submit" type="submit" > ENROLL</button></a>
+          </div>
+        
+        
+          <div class="course2">
+            <center><img id="sarvanam" src="images/intermediate.jpg" width="70%"  alt=""></center>
+            <hr>
+            <center><b><h2>Intermediate </h2></b></center>
+            <hr>
+            <a href="Login.html"><button id="submit" type="submit" > ENROLL</button></a>
+          </div>
+      
+          <div class="course3">
+            <center><img id="sarvanam" src="images/aid1132705-v4-1200px-Learn-Hindi-Step-22-Version-2.jpg" width="70%"  alt=""></center>
+            <hr>
+            <center><b><h2>Advance</h2></b></center>
+            <hr>
+            <a href="Login.html"><button id="submit" type="submit" > ENROLL</button></a>
+          </div>
+          <div class="course4">
+            <center><img id="sarvanam" src="images/mbt.jpg" width="70%"  alt=""></center>
+            <hr>
+            <center><b><h2>Mahabharata Shlok</h2></b></center>
+            <hr>
+            <a href="Login.html"><button id="submit" type="submit" > ENROLL</button></a>
+          </div>
+          <div class="course2">
+            <center><img id="sarvanam" src="images/intermediate.jpg" width="70%"  alt=""></center>
+            <hr>
+            <center><b><h2>Intermediate </h2></b></center>
+            <hr>
+            <a href="Login.html"><button id="submit" type="submit" > ENROLL</button></a>
+          </div>
+          <div class="course2">
+            <center><img id="sarvanam" src="images/intermediate.jpg" width="70%"  alt=""></center>
+            <hr>
+            <center><b><h2>Intermediate </h2></b></center>
+            <hr>
+            <a href="Login.html"><button id="submit" type="submit" > ENROLL</button></a>
+          </div>
+          <div class="course2">
+            <center><img id="sarvanam" src="images/intermediate.jpg" width="70%"  alt=""></center>
+            <hr>
+            <center><b><h2>Intermediate </h2></b></center>
+            <hr>
+            <a href="Login.html"><button id="submit" type="submit" > ENROLL</button></a>
+          </div>
+        </div>
+      </div>
+      </div>
+    </center>
+  </section>
+  <hr>
+  <hr>
+  <section>
+    <center><b><h2>Study Material</h2></b></center>
+    <div class="container1">
+      <div class="images">
+        <div class="image1">
+          <img id="sarvanam" src="images/slide_1.jpg" width="100%"  alt="">
+          <center><b><h2>सर्वनाम</h2></b></center>
+          <p>सर्वनाम उस विकारी शब्द को कहते हैं जो पूर्वापर संबंध के कारण किसी भी संज्ञा के बदले में आता है, जैसे- मैं (बोलनेवाला), तू (सुननेवाला), यह (निकट-वर्ती वस्तु), वह (दूरवर्ती वस्तु), इत्यादि।</p>
+          <a href="notes/Presentation-Pronoun.pdf"><button id="submit" type="submit" > Read More</button></a>
+        </div>
+      
+      
+        <div class="image2">
+          <img id="sarvanam" src="images/Samas-Vigraha-Examples-In-Hindi.png" width="100%"  alt="">
+          <center><b><h2>समास </h2></b></center>
+          <p>भिन्न अर्थ रखने वाले दो शब्दों या पदों (पूर्वपद तथा उत्तरपद) के मेल से बना तीसरा नया शब्द या पद समास या समस्त पद कहलाता है तथा वह प्रक्रिया जिसके द्वारा 'समस्त पद' बनता है, समास-प्रक्रिया कही जाती है।</p>
+           <a href="notes/Presentation-Pronoun.pdf"><button id="submit" type="submit" > Read More</button></a>
+        </div>
+     
+   
+        <div class="image3">
+          <img id="sarvanam" src="images/sangya.PNG" width="100%"  alt="">
+          <center><b><h2>संज्ञा</h2></b></center>
+          <p>किसी जाति, द्रव्य, गुण, भाव, व्यक्ति, स्थान और क्रिया आदि के नाम को संज्ञा कहते हैं। जैसे - पशु (जाति), सुन्दरता (गुण), व्यथा (भाव), मोहन (व्यक्ति), दिल्ली (स्थान), मारना (क्रिया)। जिस संज्ञा शब्द से पदार्थों की अवस्था, गुण-दोष, भाव या दशा, धर्म आदि का बोध हो उसे भाववाचक संज्ञा कहते हैं।</p>
+        
+          <a href="notes/Presentation-Pronoun.pdf"> <button id="submit" type="submit" > Read More</button></a>
+        </div>
+      </div>
+    </div>
+    </div>
+ </section>
+ <hr>
+ <hr>
+  <section> 
+<center><h1>OUR FOUNDER</h1></center>
+
+<center><img src="images/maam.jpeg" alt="" width="150"></center>
+<center><h3> <b>Mrs. Jyoti Verma</b></h3></center>
+<center><a href="https://www.teachmint.com/">Teachmint</a> &nbsp;&nbsp;|&nbsp;&nbsp;
+     <a href="https://www.linkedin.com/feed/">linkedin </a>&nbsp;&nbsp;|&nbsp;&nbsp;
+      <a href="https://web.whatsapp.com/">WhatsApp</a>&nbsp;&nbsp;&nbsp;&nbsp;</center>
+<br>
+<center> <h3> जो व्यक्ति हमें जीवन का सार बात बताता है वो व्यक्ति कोई और नहीं हमारा गुरु कहलाता है।</center> </h3>
+<center><p><h4> I am a Native Hindi Speaker and a Passionate Hindi/ Sanskrit Teacher with over 20 years of experience.<br>
+    I really enjoy Sanskrit and Hindi Litterature as well as Grammar and heping out my students with the same. <br> I use a more creative and Natural approach of teaching such that the students do not have to cram and find the language easy to understand. <br>
+    I have alsways had a keen interest in the languages that I teach and personally believe that Sanskrit - "the Mother of All Languages" <br> is a worthy skill that one must learn to have complete knowledge of life!  </h4></em>
+</p></center>
+</section>
+<hr>
+<hr>
+<br>
+<section>
+<center><h2>Reviews</h2></center>
+<div class="box-set1">
+  <div class="box box-1">img 1</div>
+  <textarea class="t1" name="" id="" cols="4" rows="3"></textarea>
+</div>
+<div class="box-set2">
+  <div class="box box-2">img 2</div>
+  <textarea class="t2" name="" id="" cols="4" rows="3"></textarea>
+</div>
+<div class="box-set3">
+  <div class="box box-3">img 3</div>
+  <textarea class="t3" name="" id="" cols="4" rows="3"></textarea>
+</div>
+<div class="box-set4">
+  <div class="box box-4">img 4</div>
+  <textarea class="t4" name="" id="" cols="4" rows="3"></textarea>
+</div>
+
+</section>
+<footer>
+    <a href="#">FAQ</a>
+    <a href="#">Contact Us</a>
+    <a href="#">Terms of Use</a>
+    <a href="#">Privacy Policy</a>
+    <a href="#">Refund Policy</a>
+    <a href="#">&copy; 2022|Apni Paathshaala</a>
+  
+</footer>
+</body>
+</html> 

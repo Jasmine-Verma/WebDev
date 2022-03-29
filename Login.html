@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/payment gateway</title>
+    
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        header
+        {
+        padding: 40px;
+        background-color: rgb(17, 124, 143);
+        color: white;
+        text-shadow: 1.5px 1.5px 1.5px rgb(77, 74, 74);
+        }
+        header h1 {
+    text-decoration: wavy;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: wavy;
+    text-shadow:3px 3px 2px black ;
+        }
+        nav {
+    background-color: #333;
+    overflow: hidden;
+        }
+
+        .containerr{
+            background-color: #f2f2f2;
+            padding: 5px 20px 15px 20px;
+            border: 1px solid lightgrey;
+        }
+        .Main-heading{
+            text-align: center;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        input[type="password"],
+        input[type="date"],
+        select,
+        textarea{
+            width: 100%;
+            padding: 12px;
+            border: 1px solid lightgrey;
+            border-radius: 5px;
+            margin: 10px;
+
+        }
+
+        input[type="submit"]{
+            background-color: rgba(86, 184, 184, 0.933);
+            font-size: larger;
+            padding: 4px;
+            border-radius: 3px;
+            cursor:pointer;
+            width: 50%;
+           
+        }
+
+        input[type='submit']:hover{
+            background-color: rgb(116, 141, 253);
+        }
+    
+    body {
+        margin: 15px 30px;
+        padding-left: 5px;
+        font-size: 18px;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    }
+
+    nav a {
+        text-decoration: none;
+        padding: 20px;
+        text-align: center;
+        float: left;
+        color: white;
+    }
+    nav a:hover{
+        color: rgb(67, 172, 199);
+        text-decoration: dotted;
+    }
+    nav a:visited{
+        color: rgb(89, 233, 226) ;
+    }
+    footer {
+        background-color: #333;
+        overflow:hidden;
+    }
+
+    footer a {
+        text-decoration: none;
+        padding: 20px;
+        text-align: center;
+        float: left;
+        color: white;
+        
+    }
+    p{
+                text-align: left;
+                padding-left: 5px;
+            }
+            h2{
+                color: rgb(17, 124, 143);
+                text-decoration: dashed;
+                text-shadow: none;
+            }
+            h1{
+                text-shadow: none;
+            }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><center> WELCOME TO APNI PAATHSHALA</center> </h1> 
+         </header>
+         <nav>
+            <a href="Home.html">Home</a>
+            <a href="Studymaterial.html">Courses </a>
+            <a href="StudentsReport.html">Student Report</a> 
+            <a href="Login.html">Login/Sign up</a>
+            </nav>
+        <hr>`
+       
+    <div class="containerr">
+    <form action="">
+        <h1 class="Main-heading">Students Login</h1>
+        <hr>
+        <h2>Contact Information</h2>
+        <p><b>Name:</b> <input type="text" name="name" required> </p>
+        <p><b>Phone Number: <input type="number" name="number" id="" required></b></p>
+        <p>
+         <b>Gender</b> <br>
+        Male <input type="radio"name="gender" id="male"> <br>
+        Female <input type="radio" name="gender" id="female"> <br>
+        Others <input type="radio" name=gender" id="other"> <br>         
+        </p>
+        <p><b>Address:</b> <textarea name="Address" id="Address" cols="6" rows="3"></textarea></p>
+        <p><b>Pincode:</b> <input type="number" name="" id="" required></p>
+        <p><b>Email:</b> <input type="email" name="email" id="email" required></p>
+        <p><b>Class/Course:</b>
+         <select name="Course Type" id="Course Type" required>
+            <option value="">--Select your course--</option>
+            <option value="Begginers"></option>
+            <option value="Intermeiate"></option>
+            <option value="Advance"></option>
+            <option value="Trial"></option>
+        </select> </p>
+        <hr>
+        <h2>Payment Information</h2>
+        <p><b> Payment Plan:</b> <br>
+            <select name="Pyment Plan" id="Pyment Plan" required>
+            <option value="">--slecet payment plan--</option>
+            <option value="Hourly"></option>
+            <option value="Weekly"></option>
+            <option value="Monthly"></option>
+            <option value="Quarterly"></option>
+            <option value="Yearly"></option>
+             </select>
+        </p>
+        <p> <b>Payment Method:</b>
+            <select name="Mode of payment" id="Mode of Payment" required>
+                <option value="Paytm"></option>
+                <option value="MasterCard"></option>
+                <option value="Bhim UPI"></option>
+                <option value="Debit Card"></option>
+                <option value="Credit Card"></option>
+                <option value="NEFT"></option>
+            </select>
+        </p>
+        <p><b>CVV Number: <input type="password" required></b></p>
+        <p> <b>Expiration Date: <input type="date" name="" id="" required></b></p>
+    <p><center><b> <input type="submit" value="PAy Now" name="Pay Now" id="Pay Now"></center></b></p>
+    </form>
+    </div>
+    <footer>
+        <a href="#">FAQ</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Refund Policy</a>
+        <a href="#">&copy; 2022|Apni Paathshaala</a>
+    </footer>
+</body>
+</html>
